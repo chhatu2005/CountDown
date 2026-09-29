@@ -1,0 +1,138 @@
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+/* Main Container */
+
+.container 
+{
+    width: 100%;
+    max-width: 750px;
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 
+{
+    font-size: 38px;
+    color: #263a75;
+    margin-bottom: 15px;
+}
+
+.subtitle 
+{
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+
+.countdown 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.time-box 
+{
+    width: 140px;
+    padding: 25px 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.time-box:hover 
+{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+}
+
+.time-box h2 
+{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.time-box span 
+{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+#message 
+{
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #263a75;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .countdown {
+        gap: 12px;
+    }
+
+    .time-box {
+        width: calc(50% - 10px);
+        padding: 20px 5px;
+    }
+
+    .time-box h2 {
+        font-size: 32px;
+    }
+
+    .time-box span {
+        font-size: 12px;
+    }
+
+    #message {
+        font-size: 15px;
+    }
+}
